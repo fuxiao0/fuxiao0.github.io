@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="react," />
 
 
 
@@ -57,15 +57,37 @@
 
 
 
-<meta name="description" content="frontend study notes">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mywan's blog">
-<meta property="og:url" content="http://fuxiao0.github.io/index.html">
+<meta name="description" content="在网上看了阮一峰关于react的入门实例讲解，发现讲解深入浅出，很适合刚入门的童鞋，以下是我的一些学习感悟：
+demo1-12，13是nodejs环境做的，我才疏学浅，尚未参透，但时候会再看看：
+
+温馨提示：由于demo中引入了react-dom.js 和 JSXTransformer.js，所以写法较简单易懂；
+
+demo1:入门级，hello world一样的东西主要收获：
+
+多个render">
+<meta property="og:type" content="article">
+<meta property="og:title" content="react技术－基础理解">
+<meta property="og:url" content="http://fuxiao0.github.io/2016/03/27/react技术－基础理解/index.html">
 <meta property="og:site_name" content="mywan's blog">
-<meta property="og:description" content="frontend study notes">
+<meta property="og:description" content="在网上看了阮一峰关于react的入门实例讲解，发现讲解深入浅出，很适合刚入门的童鞋，以下是我的一些学习感悟：
+demo1-12，13是nodejs环境做的，我才疏学浅，尚未参透，但时候会再看看：
+
+温馨提示：由于demo中引入了react-dom.js 和 JSXTransformer.js，所以写法较简单易懂；
+
+demo1:入门级，hello world一样的东西主要收获：
+
+多个render">
+<meta property="og:updated_time" content="2016-03-27T10:57:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mywan's blog">
-<meta name="twitter:description" content="frontend study notes">
+<meta name="twitter:title" content="react技术－基础理解">
+<meta name="twitter:description" content="在网上看了阮一峰关于react的入门实例讲解，发现讲解深入浅出，很适合刚入门的童鞋，以下是我的一些学习感悟：
+demo1-12，13是nodejs环境做的，我才疏学浅，尚未参透，但时候会再看看：
+
+温馨提示：由于demo中引入了react-dom.js 和 JSXTransformer.js，所以写法较简单易懂；
+
+demo1:入门级，hello world一样的东西主要收获：
+
+多个render">
 
 
 
@@ -83,7 +105,7 @@
   };
 </script>
 
-  <title> Hexo, NexT - mywan's blog - frontend study notes </title>
+  <title> react技术－基础理解 | mywan's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -104,9 +126,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -223,9 +243,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -245,10 +265,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/03/27/react技术－基础理解/" itemprop="url">
-                  react技术－基础理解
-                </a>
+                react技术－基础理解
               
             
           </h1>
@@ -299,9 +316,7 @@
       
 
       
-        
-          
-            <p>在网上看了<a href="http://www.ruanyifeng.com/blog/2015/03/react.html" target="_blank" rel="external">阮一峰关于react的入门实例讲解</a>，发现讲解深入浅出，很适合刚入门的童鞋，以下是我的一些学习感悟：</p>
+        <p>在网上看了<a href="http://www.ruanyifeng.com/blog/2015/03/react.html" target="_blank" rel="external">阮一峰关于react的入门实例讲解</a>，发现讲解深入浅出，很适合刚入门的童鞋，以下是我的一些学习感悟：</p>
 <p>demo1-12，13是nodejs环境做的，我才疏学浅，尚未参透，但时候会再看看：</p>
 <blockquote>
 <p>温馨提示：由于demo中引入了react-dom.js 和 JSXTransformer.js，所以写法较简单易懂；</p>
@@ -380,423 +395,64 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> RepoList = React.createClass(&#123;</span><br><span class="line"></span><br><span class="line">        getInitialState: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> &#123;</span><br><span class="line"></span><br><span class="line">                loading: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">                error: <span class="literal">null</span>,</span><br><span class="line"></span><br><span class="line">                data: <span class="literal">null</span></span><br><span class="line"></span><br><span class="line">            &#125;;</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        componentDidMount() &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">this</span>.props.promise.then(</span><br><span class="line"></span><br><span class="line">                            value =&gt; <span class="keyword">this</span>.setState(&#123;loading: <span class="literal">false</span>, data: value&#125;),</span><br><span class="line"></span><br><span class="line">                            error =&gt; <span class="keyword">this</span>.setState(&#123;loading: <span class="literal">false</span>, error: error&#125;));</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        render: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">this</span>.state.loading) &#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">return</span> &lt;span&gt;Loading...&lt;/span&gt;;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">this</span>.state.error !== <span class="literal">null</span>) &#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">return</span> &lt;span&gt;Error: &#123;this.state.error.message&#125;&lt;/span&gt;;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">var</span> repos = <span class="keyword">this</span>.state.data.items;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">var</span> repoList = repos.map(<span class="function"><span class="keyword">function</span> (<span class="params">repo</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">return</span> (</span><br><span class="line"></span><br><span class="line">                            &lt;li&gt;</span><br><span class="line"></span><br><span class="line">                                &lt;a href=&#123;repo.html_url&#125;&gt;&#123;repo.name&#125;&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">                                (&#123;repo.stargazers_count&#125; stars)</span><br><span class="line"></span><br><span class="line">                                &lt;br/&gt;</span><br><span class="line"></span><br><span class="line">                                &#123;repo.description&#125;</span><br><span class="line"></span><br><span class="line">                            &lt;/li&gt;</span><br><span class="line"></span><br><span class="line">                    );</span><br><span class="line"></span><br><span class="line">                &#125;);</span><br><span class="line"></span><br><span class="line">                <span class="keyword">return</span> (</span><br><span class="line"></span><br><span class="line">                        &lt;main&gt;</span><br><span class="line"></span><br><span class="line">                            &lt;h1&gt;Most Popular JavaScript Projects in Github&lt;/h1&gt;</span><br><span class="line"></span><br><span class="line">                            &lt;ol&gt;&#123;repoList&#125;&lt;/ol&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;/main&gt;</span><br><span class="line"></span><br><span class="line">                );</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    ReactDOM.render(</span><br><span class="line"></span><br><span class="line">            &lt;RepoList promise=&#123;$.getJSON('https://api.github.com/search/repositories?q=javascript&amp;sort=stars')&#125;/&gt;,</span><br><span class="line"></span><br><span class="line">            document.body</span><br><span class="line"></span><br><span class="line">    );</span><br></pre></td></tr></table></figure>
 <p>好想截图的，然而图片不好放到博客，也不美观，and好麻烦。。。。</p>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+      
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/15/improve-提高页面效率/" itemprop="url">
-                  improve-提高页面效率
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T17:59:16+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/react/" rel="tag">#react</a>
           
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/15/improve-提高页面效率/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/improve-提高页面效率/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-             
-          
-
-           
-
-          
-
-
-
-&nbsp; | &nbsp;阅读次数
-<span id="/2016/03/15/improve-提高页面效率/" class="leancloud_visitors" data-flag-title="improve-提高页面效率"></span>
-
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="文档碎片"><a href="#文档碎片" class="headerlink" title="文档碎片"></a>文档碎片</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><blockquote>
-<p>类似一个临时的文档，要所有要加的dom元素先放在这里，达到不要每次操作dom元素，提高页面效率：</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> d1 = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="comment">//创建十个段落,常规的方式</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; <span class="number">1000</span>; i ++) &#123;</span><br><span class="line">    <span class="keyword">var</span> p = <span class="built_in">document</span>.createElement(<span class="string">"p"</span>);</span><br><span class="line">    <span class="keyword">var</span> oTxt = <span class="built_in">document</span>.createTextNode(<span class="string">"段落"</span> + i);</span><br><span class="line">    p.appendChild (oTxt);</span><br><span class="line">    <span class="built_in">document</span>.body.appendChild(p);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> d2 = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">"第一次创建需要的时间:"</span>+(d2.getTime()-d1.getTime()));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//使用了createDocumentFragment()的程序</span></span><br><span class="line"><span class="keyword">var</span> d3 = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="keyword">var</span> pFragment = <span class="built_in">document</span>.createDocumentFragment();</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; <span class="number">1000</span>; i ++) &#123;</span><br><span class="line">    <span class="keyword">var</span> p = <span class="built_in">document</span>.createElement(<span class="string">"p"</span>);</span><br><span class="line">    <span class="keyword">var</span> oTxt = <span class="built_in">document</span>.createTextNode(<span class="string">"段落"</span> + i);</span><br><span class="line">    p.appendChild(oTxt);</span><br><span class="line">    pFragment.appendChild(p);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.body.appendChild(pFragment);</span><br><span class="line"><span class="keyword">var</span> d4 = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"><span class="built_in">document</span>.write(<span class="string">"第2次创建需要的时间:"</span>+(d4.getTime()-d3.getTime()));</span><br><span class="line"></span><br><span class="line">[来源](http:<span class="comment">//www.cnblogs.com/yzenet/p/3999489.html)</span></span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/15/improve-提高页面效率/" rel="next" title="improve-提高页面效率">
+                <i class="fa fa-chevron-left"></i> improve-提高页面效率
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/03/15/angularJs遇到的初级坑/" itemprop="url">
-                  angularJs遇到的初级坑
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T17:52:51+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/15/angularJs遇到的初级坑/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/angularJs遇到的初级坑/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-             
-          
-
-           
-
-          
-
-
-
-&nbsp; | &nbsp;阅读次数
-<span id="/2016/03/15/angularJs遇到的初级坑/" class="leancloud_visitors" data-flag-title="angularJs遇到的初级坑"></span>
-
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <blockquote>
-<p>以下angularjs简称anjs</p>
-</blockquote>
-<h3 id="安装anjs-phonecat"><a href="#安装anjs-phonecat" class="headerlink" title="安装anjs-phonecat"></a>安装anjs-phonecat</h3><ul>
-<li><p>第一步，下载项目目前最新源码：$ git clone git://github.com/angular/angular-phonecat.git</p>
-</li>
-<li><p>第二步，进入angular-phonecat目录，运行如下命令：git checkout -f step-0做分支处理，保持每次学习代码的独立性，非必选哦，但是必须进入此目录</p>
-</li>
-<li><p>第三步，运行以下命令：</p>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">node scripts/web-server.js</span><br></pre></td></tr></table></figure>
-<ul>
-<li>module报错了?</li>
-</ul>
-<blockquote>
-<p> 解决办法1:  找<a href="http://stackoverflow.com/questions/19475221/cannot-connect-to-web-server-with-node-js" target="_blank" rel="external">stackflow</a>，大牛们说是运行的文件路径不是当前目录，要退一级，运行命令如下：</p>
-</blockquote>
-<pre><code class="javascript">
-node ./scripts/web-server.js
-</code></pre>
-<p>结果：未解决</p>
-<blockquote>
-<p> 解决办法2：难道当前文件路径不对？这是好多学习命令的过程中都要遇到的问题，接着往下看，第二位大牛说这是现在的anjs版本中缺少scripts下的web-server.js文件，soga！！！去网上csdn下载了一个之前版本的angular-phonecat，将其中scripts下的web-server.js移到现用项目目录下！ok！！！</p>
-</blockquote>
-<pre><code>结果：解决了。。。
-</code></pre>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/15/request-网络请求优化/" itemprop="url">
-                  request-网络请求优化
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-15T17:52:29+08:00" content="2016-03-15">
-              2016-03-15
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/03/15/request-网络请求优化/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/15/request-网络请求优化/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-             
-          
-
-           
-
-          
-
-
-
-&nbsp; | &nbsp;阅读次数
-<span id="/2016/03/15/request-网络请求优化/" class="leancloud_visitors" data-flag-title="request-网络请求优化"></span>
-
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li>网络请求优化主要从以下三个方面入手：</li>
-</ul>
-<ol>
-<li>减少请求数；</li>
-</ol>
-<blockquote>
-<p>方法：压缩图片、js、css</p>
-</blockquote>
-<ol>
-<li>降低请求长度；</li>
-</ol>
-<blockquote>
-<p>方法：合并js、css</p>
-</blockquote>
-<ol>
-<li>尽可能使用缓存；</li>
-</ol>
-<blockquote>
-<p>方法：</p>
-</blockquote>
-<pre><code>** js、css模块化加载；
-
-** 设置合理的缓存有效期；
-</code></pre><ul>
-<li>网络请求优化的本质：</li>
-</ul>
-<p>尽可能减少上图中三个部分的更新；</p>
-<ul>
-<li>网络请求优化－js写法部分：</li>
-</ul>
-<ol>
-<li><p>当对多个对象进行读写操作时，尽可能将读操作和写操作分开，避免多次重复读写操作造成的加载js变慢；</p>
-</li>
-<li><p>当出现定位元素，改变了其父元素，回影响layout重新加载的个数，所以应该合理使用定位元素；</p>
-</li>
-<li><p>尽量减少dom节点操作的js，尽量不用；</p>
-</li>
-</ol>
-<ul>
-<li>另外，以下一些小方法可以有效的优化网络请求：</li>
-</ul>
-<ol>
-<li>使用空闲加载：</li>
-</ol>
-<blockquote>
-<p>对大图片的加载，可使用预加载，在网络请求空闲时加载其，利用style标签的rel＝“prefetch”属性做到；</p>
-<p>对dns的加载，也可以利用上述方法，利用rel＝”dns-prefetch”来实现；</p>
-</blockquote>
-<ul>
-<li>再一个，在选择器的写法上：</li>
-</ul>
-<blockquote>
-<p>由于浏览器匹配选择器时，是从右往左的顺序，所以，在同个元素的不同选择器写法中，靠右的元素最好是接近唯一选择器，例如：当.inner div和div .inner选择的是统一元素时，后者比前者更好；</p>
-<p>类似上述，js中的作用域中，由于变量的申明是从内往外找的，所以申明越靠近使用的地方越好，避免js去查找声明费时；</p>
-</blockquote>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/27/react技术－基础理解/"
+           data-title="react技术－基础理解" data-url="http://fuxiao0.github.io/2016/03/27/react技术－基础理解/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -816,8 +472,17 @@ node ./scripts/web-server.js
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -862,6 +527,23 @@ node ./scripts/web-server.js
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#demo1-入门级，hello-world一样的东西"><span class="nav-number">1.</span> <span class="nav-text">demo1:入门级，hello world一样的东西</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo2-数组遍历"><span class="nav-number">2.</span> <span class="nav-text">demo2: 数组遍历</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo3-还是数组遍历，但是数组里面多了html标签"><span class="nav-number">3.</span> <span class="nav-text">demo3: 还是数组遍历，但是数组里面多了html标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo4-组件的使用，还有就是外部变量props传入render使用"><span class="nav-number">4.</span> <span class="nav-text">demo4: 组件的使用，还有就是外部变量props传入render使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo5-数组遍历和prop赋值的双重天"><span class="nav-number">5.</span> <span class="nav-text">demo5:  数组遍历和prop赋值的双重天</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo7-有除了render外其它的函数handleClick"><span class="nav-number">6.</span> <span class="nav-text">demo7 : 有除了render外其它的函数handleClick</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo-8-点击切换，使用很广泛啊"><span class="nav-number">7.</span> <span class="nav-text">demo 8:  点击切换，使用很广泛啊</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo10-不透明度的渐变，扩展应用也是很广的哦"><span class="nav-number">8.</span> <span class="nav-text">demo10:  不透明度的渐变，扩展应用也是很广的哦</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo-11-url获取值操作"><span class="nav-number">9.</span> <span class="nav-text">demo 11 : url获取值操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#demo12-终于最后了。。请求一个url，获取json数据，在render中对返回状态进行判断处理"><span class="nav-number">10.</span> <span class="nav-text">demo12: 终于最后了。。请求一个url，获取json数据，在render中对返回状态进行判断处理</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
       
 
     </div>
@@ -953,6 +635,167 @@ node ./scripts/web-server.js
   
 
   
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.scheme !== 'Pisces' && (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always')) {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   
 
